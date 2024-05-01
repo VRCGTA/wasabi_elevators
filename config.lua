@@ -42,9 +42,13 @@ Config.Elevators = {
             title = 'Roof floor',
             description = 'Heli port',
             target = {
-            width = 5,
-            length = 4
-            } -- Example without group
+                width = 5,
+                length = 4
+            },
+            groups = {-- Job locks
+                'police',
+                'ambulance'
+            },
         },
     },
 }
